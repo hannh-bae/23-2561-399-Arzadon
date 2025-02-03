@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: center;
+   background-color: #333;
+   padding: 10px 0;
+}
+
+.flex-container > div {
+   background-color: #444;
+   color: white;
+   padding: 10px 20px;
+   margin: 5px;
+   text-align: center;
+}
+
+.flex-container > div:hover {
+   background-color: #555;
+}
+
+/* Hero Section */
+.hero {
+   background-image: url('https://source.unsplash.com/1600x900/?coffee,cafe');
+   background-size: cover;
+   background-position: center;
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+/* About Section */
+.about {
+   padding: 40px 20px;
+}
+
+/* Services Section */
+.services {
+   padding: 40px 20px;
+}
+
+.service-list {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.service-item {
+   background-color: #f4a261; /* Warm orange */
+   color: white;
+   width: calc(30% - 20px); /* Three items per row with spacing */
+   margin-bottom: 20px;
+   padding: 20px;
+}
+
+@media (max-width: 768px) {
+   .service-item {
+       width: calc(100% - 20px); /* Full width on smaller screens */
+       margin-bottom: 15px;
+   }
+}
+
+/* Contact Section */
+.contact {
+   padding: 40px 20px; 
+}
+
+input, textarea {
+   width: calc(100% - 20px);
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+button[type='submit'] {
+   padding: 10px;
+   background-color: #ff6347; /* Tomato color */
+   color: white;
+   border: none;
+}
+
+button[type='submit']:hover {
+   background-color: #e5533d; /* Darker tomato */
+}
