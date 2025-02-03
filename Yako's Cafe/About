@@ -1,0 +1,6 @@
+<div class="flex-container">
+  <div>Home </div>
+  <div>About</div>
+  <div>Services</div> 
+  <div>Contacts</div>
+</div>
